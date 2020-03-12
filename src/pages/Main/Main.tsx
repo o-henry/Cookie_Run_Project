@@ -1,9 +1,9 @@
 import React from 'react';
-import { Input } from 'components'
+import { FormInput } from 'components';
 
 const Main: React.FC = () => {
     return (
-        <Input />
+        <FormInput/>
     )
 }
 export default Main

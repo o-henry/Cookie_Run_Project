@@ -1,9 +1,9 @@
 import React from 'react';
 import { FormInput } from 'components';
 
-const Main: React.FC = () => {
+const Reservation: React.FC = () => {
     return (
         <FormInput/>
     )
 }
-export default Main
+export default Reservation

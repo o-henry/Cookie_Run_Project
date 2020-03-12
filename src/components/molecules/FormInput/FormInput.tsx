@@ -4,7 +4,8 @@ import { Button, Input } from 'components'
 const FormInput: React.FC = () => {
     return (
         <div>
-            <Input /><Button/>
+            <Input />
+            <Button/>
         </div>
     )
        

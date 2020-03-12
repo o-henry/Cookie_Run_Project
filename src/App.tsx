@@ -1,9 +1,9 @@
 import React from "react";
-import { Main } from 'pages'
+import { Reservation } from 'pages'
 
 const App: React.FC = () => {
   return (
-    <Main />
+    <Reservation />
   )
 };
 

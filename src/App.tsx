@@ -1,10 +1,8 @@
-import React from "react";
-import { Reservation } from 'pages'
+import React from 'react';
+import { Reservation } from 'pages';
 
 const App = () => {
-  return (
-    <Reservation />
-  )
+  return <Reservation />;
 };
 
 export default App;

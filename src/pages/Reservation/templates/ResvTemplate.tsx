@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { FormInput } from 'components';
 
 const ResvTemplate: React.FC = () => {
@@ -6,6 +6,6 @@ const ResvTemplate: React.FC = () => {
         <div>
             <FormInput />
         </div>
-    )
-}
-export default ResvTemplate
+    );
+};
+export default ResvTemplate;

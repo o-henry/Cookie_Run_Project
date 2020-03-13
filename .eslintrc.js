@@ -8,9 +8,7 @@ module.exports = {
             jsx: true,
         },
     },
-    rules: {
-        // 추후 .prettierrc.js 파일에서 설정해줄 예정
-    },
+    rules: {},
     settings: {
         react: {
             version: 'detect',

@@ -5,10 +5,10 @@ const FormInput: React.FC = () => {
     return (
         <div>
             <Input />
-            <Button/>
+            <Button />
         </div>
     )
-       
+
 }
 
 export default FormInput

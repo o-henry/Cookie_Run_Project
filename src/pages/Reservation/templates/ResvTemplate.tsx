@@ -1,13 +1,10 @@
 import React from 'react'
+import { FormInput } from 'components';
 
-interface Props {
-
-}
-
-const ResvTemplate: React.FC = ({}) => {
-    return(
+const ResvTemplate: React.FC = () => {
+    return (
         <div>
-            Template
+            <FormInput />
         </div>
     )
 }

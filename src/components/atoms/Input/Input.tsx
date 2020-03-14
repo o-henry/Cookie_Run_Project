@@ -1,10 +1,25 @@
 import React from 'react'
 
-const Input: React.FC = () => {
+interface Props {
+    // input state value 
+    value: string;
+    // place holder
+    placeholder?: string;
+    // onChange setState handler
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => string | void;
+
+}
+
+function Input({ value, placeholder, onChange }: Props): React.ReactElement {
     return (
-        <input type="text" placeholder="
-        -' 없이 숫자만 입력해주세요" />
+        <input
+            type="text"
+            value={value}
+            placeholder={placeholder}
+            onChange={onChange}
+        />
     )
 }
+
 
 export default Input

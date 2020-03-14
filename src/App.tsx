@@ -1,7 +1,7 @@
 import React from 'react';
 import { Reservation } from 'pages';
 
-const App = () => {
+const App: React.FC = () => {
   return <Reservation />;
 };
 

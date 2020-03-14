@@ -1,11 +1,16 @@
 import React from 'react';
-import { FormInput } from 'components';
 
-const ResvTemplate: React.FC = () => {
+
+interface Props {
+    content: React.ReactNode;
+}
+
+function ResvTemplate({ content }: Props): React.ReactElement {
     return (
         <div>
-            <FormInput />
+            {content}
         </div>
     );
 };
+
 export default ResvTemplate;

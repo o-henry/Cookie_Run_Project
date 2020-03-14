@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html,
+body {
+    height: 100%;
+    font-family: 'Jua', sans-serif;
+}
+
+/* _reset.scss */
+@import 'abstract/reset', 'abstract/utils';
+
+/*  layout */
+@import 'layout/grid';
+
+/* atoms */
+@import 'atoms/Button', 'atoms/Input', 'atoms/button';
+
+/* molecules */
+@import 'molecules/FormInput';
+
+/* templates */
+@import 'templates/reservation';
+
+/* pages */
+@import 'pages/Reservation';

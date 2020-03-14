@@ -15,7 +15,6 @@ function Reservation(): React.ReactElement {
             } else {
                 alert(`이미 사전예약이 완료된 번호입니다.`)
             }
-
         }
     });
 
@@ -40,6 +39,5 @@ function Reservation(): React.ReactElement {
         />
     )
 };
-
 
 export default Reservation;

@@ -1,7 +1,8 @@
 import React from 'react'
 
 interface Props {
-    onClick: () => void;
+    // onClick setState handler
+    onClick?: () => void;
 }
 
 function Button({ onClick }: Props): React.ReactElement {

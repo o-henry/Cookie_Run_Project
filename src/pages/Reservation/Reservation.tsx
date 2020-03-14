@@ -8,9 +8,14 @@ import { POST_PHONE_NUMBER } from 'graphql/mutation';
 function Reservation(): React.ReactElement {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [projectId, setProjectId] = useState('');
-    const [submit, { data, loading, error }] = useMutation(POST_PHONE_NUMBER, {
+    const [submit, { loading, error }] = useMutation(POST_PHONE_NUMBER, {
         onCompleted({ submit: { alreadyExists } }) {
-            alert(`이미 존재하나요? ${alreadyExists} `)
+            if (!alreadyExists) {
+                alert(`사전 예약이 완료 되었습니다.`)
+            } else {
+                alert(`이미 사전예약이 완료된 번호입니다.`)
+            }
+
         }
     });
 
@@ -21,8 +26,6 @@ function Reservation(): React.ReactElement {
         setProjectId('2020-lch-c47348')
         submit({ variables: { projectId, phoneNumber } });
     }
-
-    console.log('data', data, 'phoneNumber', phoneNumber, 'id', projectId)
 
     return (
         <ResvTemplate

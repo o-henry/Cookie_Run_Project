@@ -6,7 +6,7 @@ interface Props {
     // place holder
     placeholder?: string;
     // onChange setState handler
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => string | void;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 
 }
 

@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Button: React.FC = () => {
+interface Props {
+    onClick: () => void;
+}
+
+function Button({ onClick }: Props): React.ReactElement {
     return (
-        <button>사전예약하기</button>
+        <button onClick={onClick}>사전예약하기</button>
     )
 }
+
 
 export default Button

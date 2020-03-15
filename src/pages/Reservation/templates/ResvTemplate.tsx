@@ -5,9 +5,10 @@ import 'sass/main.scss'
 
 interface Props {
     formInput: React.ReactNode;
+    content: React.ReactNode;
 }
 
-function ResvTemplate({ formInput }: Props): React.ReactElement {
+function ResvTemplate({ formInput, content }: Props): React.ReactElement {
     return (
         <Grid>
             <div className='ResvTemplate'>
@@ -16,6 +17,7 @@ function ResvTemplate({ formInput }: Props): React.ReactElement {
                 <img id="reward" src={reward} alt={'reward'} />
                 <img id="crystal" src={crystal} alt={'crystal'} />
                 {formInput}
+                {content}
             </div>
         </Grid>
     );

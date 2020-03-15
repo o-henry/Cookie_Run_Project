@@ -7,7 +7,8 @@
 @import 'layout/grid';
 
 /* atoms */
-@import 'atoms/Button', 'atoms/Input', 'atoms/button', 'atoms/img';
+@import 'atoms/Button', 'atoms/Input', 'atoms/button', 'atoms/img',
+  'atoms/content';
 
 /* molecules */
 @import 'molecules/FormInput';

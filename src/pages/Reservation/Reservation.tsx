@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
-import { FormInput } from 'components';
+import { FormInput, Content } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 
@@ -33,6 +33,11 @@ function Reservation(): React.ReactElement {
                     onClick={handleClick}
                 />
             }
+            content={[
+                <Content>{'사전예약을 신청하신'}</Content>,
+                <Content style={'event'}>{'모든분들께 5만원 상당의'}</Content>,
+                <Content>{'아이템을 드립니다!'}</Content>
+            ]}
         />
     )
 };

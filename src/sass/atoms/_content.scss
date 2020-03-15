@@ -1,0 +1,13 @@
+@import '../abstract/utils';
+
+.Content {
+  position: relative;
+  text-align: center;
+  font-size: $big;
+  color: $white;
+  padding: 0 3rem 0 3rem;
+  bottom: 24rem;
+  &.event {
+    color: $yellow;
+  }
+}

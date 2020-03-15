@@ -1,5 +1,6 @@
 @import 'utils';
 
+// responsive
 @mixin mobile {
   @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
     @content;
@@ -15,5 +16,32 @@
 @mixin desktop {
   @media (min-width: #{$breakpoint-desktop}) {
     @content;
+  }
+}
+
+// grid
+@mixin reservation-layout {
+  .container {
+    display: grid;
+    // grid-template-rows: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'header header header'
+      '. main .'
+      'footer footer footer';
+    .header {
+      grid-area: header;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      grid-area: main;
+      background: greenyellow;
+    }
+    .footer {
+      grid-area: footer;
+    }
   }
 }

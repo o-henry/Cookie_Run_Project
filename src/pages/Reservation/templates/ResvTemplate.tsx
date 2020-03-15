@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from 'pages'
 import 'sass/main.scss'
 
 interface Props {
@@ -7,9 +8,11 @@ interface Props {
 
 function ResvTemplate({ content }: Props): React.ReactElement {
     return (
-        <div className='ResvTemplate'>
-            {content}
-        </div>
+        <Grid>
+            <div className='ResvTemplate'>
+                {content}
+            </div>
+        </Grid>
     );
 };
 

@@ -1,0 +1,16 @@
+@import '../abstract/mixin';
+@import '../abstract/utils';
+
+html,
+body,
+#root,
+#root > div {
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Jua', sans-serif;
+  background: $purple;
+}
+
+@include desktop {
+  @include reservation-layout;
+}

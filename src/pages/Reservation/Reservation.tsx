@@ -30,6 +30,7 @@ function Reservation(): React.ReactElement {
         <ResvTemplate
             content={
                 <FormInput
+                    style="resv"
                     placeholder="'-' 없이 숫자만 입력해주세요"
                     value={phoneNumber}
                     onChange={e => setPhoneNumber(e.target.value)}

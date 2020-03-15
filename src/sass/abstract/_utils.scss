@@ -9,6 +9,7 @@ $regular: 400;
 $bold: 600;
 
 // font-size
+$very-small: 0.5rem;
 $small: 0.9rem;
 $medium: 1.5rem;
 $big: 2.5rem;
@@ -16,6 +17,10 @@ $big: 2.5rem;
 // color
 $white: white;
 $purple: #300756;
+$light-purple: #5e1985;
+$border-line: #7825ac;
+$inner-line: #9933db;
+$button-color: #f9de4b;
 
 // letter-spacing
 $short: 0.3rem;
@@ -29,3 +34,8 @@ $header-padding: 1.5rem 0 2rem 0;
 // content
 $content-padding: 1rem 0 0 0;
 $content-font-weight: $bold;
+
+// formInput
+$form-border-radius: 3rem;
+$form-border-status: none;
+$form-height: 2rem;

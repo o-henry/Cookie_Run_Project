@@ -1,4 +1,11 @@
 @import '../abstract/utils';
 
 .Input {
+  &.resv {
+    width: 20rem;
+    padding: 0.8rem;
+    border-radius: $form-border-radius;
+    border: $form-border-status;
+    font-size: $very-small;
+  }
 }

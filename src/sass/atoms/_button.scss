@@ -1,0 +1,13 @@
+@import '../abstract/utils';
+
+.Button {
+  &.resv {
+    position: absolute;
+    text-align: center;
+    height: $form-height;
+    border-radius: $form-border-radius;
+    border: $form-border-status;
+    background: $button-color;
+    font-size: $medium;
+  }
+}

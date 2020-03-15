@@ -1,0 +1,8 @@
+@import '../abstract/utils';
+
+.forminput {
+  background: $light-purple;
+  box-shadow: 0 0 0 0.09rem $inner-line, 0 0 0 0.5rem $light-purple;
+  border-radius: 0.1rem;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+}

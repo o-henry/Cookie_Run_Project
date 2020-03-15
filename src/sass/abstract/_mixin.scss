@@ -35,10 +35,10 @@
     .main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       text-align: center;
       grid-area: main;
-      background: greenyellow;
+      // background: greenyellow;
     }
     .footer {
       grid-area: footer;

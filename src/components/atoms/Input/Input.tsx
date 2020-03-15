@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import 'sass/main.scss';
+import classNames from 'classnames';
+
 
 interface Props {
     // input state value 
@@ -7,12 +10,14 @@ interface Props {
     placeholder?: string;
     // onChange setState handler
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-
+    // style
+    style?: string;
 }
 
-function Input({ value, placeholder, onChange }: Props): React.ReactElement {
+function Input({ value, placeholder, onChange, style }: Props): React.ReactElement {
     return (
         <input
+            className={classNames('Input', style)}
             type="text"
             value={value}
             placeholder={placeholder}
@@ -20,6 +25,11 @@ function Input({ value, placeholder, onChange }: Props): React.ReactElement {
         />
     )
 }
+
+Input.defaultProps = {
+    style: ''
+};
+
 
 
 export default Input

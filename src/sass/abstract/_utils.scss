@@ -1,0 +1,30 @@
+// Breakpoints
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 1024px;
+
+// font-weight
+$light: 200;
+$regular: 400;
+$bold: 600;
+
+// font-size
+$small: 0.9rem;
+$medium: 1.5rem;
+$big: 2.5rem;
+
+// color
+$white: white;
+
+// letter-spacing
+$short: 0.3rem;
+
+// header
+$header-font-weight: $bold;
+$header-font-size: $big;
+$header-font-space: $short;
+$header-padding: 1.5rem 0 2rem 0;
+
+// content
+$content-padding: 1rem 0 0 0;
+$content-font-weight: $bold;

@@ -2,12 +2,11 @@
 
 html,
 body {
-    height: 100%;
-    font-family: 'Jua', sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 
-/* _reset.scss */
-@import 'abstract/reset', 'abstract/utils';
+/* abstract */
+@import 'abstract/reset', 'abstract/utils', 'abstract/mixin';
 
 /*  layout */
 @import 'layout/grid';
@@ -20,6 +19,3 @@ body {
 
 /* templates */
 @import 'templates/reservation';
-
-/* pages */
-@import 'pages/Reservation';

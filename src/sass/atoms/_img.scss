@@ -5,16 +5,40 @@ img {
   z-index: 1;
 }
 
+@keyframes cherry {
+  0% {
+    top: 39rem;
+  }
+  95% {
+  }
+  to {
+    top: 42.5rem;
+  }
+}
+
+@keyframes jungle {
+  0% {
+    top: 2rem;
+  }
+  95% {
+  }
+  to {
+    top: 6rem;
+  }
+}
+
 #cherry {
   width: 14rem;
   left: 18.6rem;
   top: 42.5rem;
+  animation: cherry 3s ease-in Infinite Alternate;
 }
 
 #jungle {
   width: 18rem;
   top: 4rem;
   right: 15rem;
+  animation: jungle 2.5s ease-in Infinite Alternate;
 }
 
 #reward {

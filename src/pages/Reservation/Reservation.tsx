@@ -1,16 +1,17 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
-import { FormInput, Content } from 'components';
+import { FormInput, Content, Image } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 import { useTranslation } from 'react-i18next';
 import swal from 'sweetalert';
 
 function Reservation(): React.ReactElement {
+    const { t } = useTranslation();
     const [phoneNumber, setPhoneNumber] = useState('');
     const [projectId, setProjectId] = useState('');
-    const [submit, { loading, error }] = useMutation(POST_PHONE_NUMBER, {
+    const [submit, { loading }] = useMutation(POST_PHONE_NUMBER, {
         onCompleted({ submit: { alreadyExists } }) {
             if (!alreadyExists) {
                 swal(`사전 예약이 완료 되었습니다.`, { buttons: ['확인', false] })
@@ -21,12 +22,19 @@ function Reservation(): React.ReactElement {
         }
     });
 
+
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
-        submit({ variables: { projectId, phoneNumber } });
-    }
+        // check number
+        const checkNumber = /^\d{3}\d{4}\d{4}$/;
+        if (checkNumber.test(phoneNumber)) {
+            submit({ variables: { projectId, phoneNumber } });
+        } else {
+            swal(`입력 양식에 맞춰 
+            다시 입력 해주세요!`, { buttons: ['확인', false] })
+        }
 
-    const { t } = useTranslation();
+    }
 
     return (
         <ResvTemplate

@@ -12,10 +12,10 @@ function ResvTemplate({ formInput, content }: Props): React.ReactElement {
     return (
         <Grid>
             <div className='ResvTemplate'>
-                <img id='cherry' src={cherry} alt={'cherry-cookie'} />
-                <img id='jungle' src={jungle} alt={'jungle-cookie'} />
-                <img id="reward" src={reward} alt={'reward'} />
-                <img id="crystal" src={crystal} alt={'crystal'} />
+                <img id='cherry' src={cherry} alt='cherry-cookie' />
+                <img id='jungle' src={jungle} alt='jungle-cookie' />
+                <img id="reward" src={reward} alt='reward' />
+                <img id="crystal" src={crystal} alt='crystal' />
                 {formInput}
                 {content}
             </div>

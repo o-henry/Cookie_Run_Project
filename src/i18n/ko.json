@@ -1,0 +1,13 @@
+{
+  "content": {
+    "event-message-line1": "사전예약을 신청하신",
+    "event-message-line2": "모든분들께 5만원 상당의",
+    "event-message-line3": "아이템을 드립니다."
+  },
+  "placeholder": {
+    "input": "'-'없이 숫자만 입력해주세요"
+  },
+  "button": {
+    "content": "사전예약하기 >"
+  }
+}

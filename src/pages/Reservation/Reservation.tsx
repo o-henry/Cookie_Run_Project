@@ -4,6 +4,7 @@ import ResvTemplate from './templates/ResvTemplate';
 import { FormInput, Content } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
+import { useTranslation } from 'react-i18next';
 import swal from 'sweetalert';
 
 function Reservation(): React.ReactElement {
@@ -25,21 +26,23 @@ function Reservation(): React.ReactElement {
         submit({ variables: { projectId, phoneNumber } });
     }
 
+    const { t } = useTranslation();
+
     return (
         <ResvTemplate
             formInput={
                 <FormInput
                     style="resv"
-                    placeholder="'-' 없이 숫자만 입력해주세요"
+                    placeholder={t('placeholder.input')}
                     value={phoneNumber}
                     onChange={e => setPhoneNumber(e.target.value)}
                     onClick={handleClick}
-                />
+                >{t('button.content')}</FormInput>
             }
             content={[
-                <Content>{'사전예약을 신청하신'}</Content>,
-                <Content style={'event'}>{'모든분들께 5만원 상당의'}</Content>,
-                <Content>{'아이템을 드립니다!'}</Content>
+                <Content key={1}>{t('content.message1')}</Content>,
+                <Content key={2} style={'event'}>{t('content.message2')}</Content>,
+                <Content key={3}>{t('content.message3')}</Content>
             ]}
         />
     )

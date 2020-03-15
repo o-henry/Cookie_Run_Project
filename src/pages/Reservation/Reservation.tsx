@@ -4,7 +4,6 @@ import { FormInput } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 
-
 function Reservation(): React.ReactElement {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [projectId, setProjectId] = useState('');
@@ -18,9 +17,6 @@ function Reservation(): React.ReactElement {
         }
     });
 
-    if (loading) return <p>Loading ...</p>;
-    if (error) return <p>Error</p>
-
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
         submit({ variables: { projectId, phoneNumber } });
@@ -28,7 +24,7 @@ function Reservation(): React.ReactElement {
 
     return (
         <ResvTemplate
-            content={
+            formInput={
                 <FormInput
                     style="resv"
                     placeholder="'-' 없이 숫자만 입력해주세요"

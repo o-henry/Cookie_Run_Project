@@ -11,7 +11,14 @@ body,
 #root > div {
   overflow: hidden;
   height: 100%;
-  background: $purple;
+  background: radial-gradient(
+    circle,
+    #8140b4,
+    #5e2a8e,
+    #3f1066,
+    #310756,
+    #300756
+  );
 }
 
 @include desktop {

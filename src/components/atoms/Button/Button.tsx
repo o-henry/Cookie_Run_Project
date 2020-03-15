@@ -11,7 +11,8 @@ interface Props {
 
 function Button({ onClick, style }: Props): React.ReactElement {
     return (
-        <button className={classNames('Button', style)} onClick={onClick}>사전예약하기</button>
+        // eslint-disable-next-line react/no-unescaped-entities
+        <button className={classNames('Button', style)} onClick={onClick}>사전예약하기 ></button>
     )
 }
 

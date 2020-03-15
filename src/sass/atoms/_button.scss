@@ -3,8 +3,11 @@
 .Button {
   &.resv {
     position: absolute;
+    padding: 0.4rem;
+    right: 4rem;
+    height: 2.4rem;
+    width: 10rem;
     text-align: center;
-    height: $form-height;
     border-radius: $form-border-radius;
     border: $form-border-status;
     background: $button-color;

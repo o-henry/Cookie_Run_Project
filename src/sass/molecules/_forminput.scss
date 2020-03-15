@@ -1,8 +1,12 @@
 @import '../abstract/utils';
 
 .forminput {
-  background: $light-purple;
-  box-shadow: 0 0 0 0.09rem $inner-line, 0 0 0 0.5rem $light-purple;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background: linear-gradient(to right, $light-purple, $purple);
+  box-shadow: 0 0 0 0.09rem $inner-line, 0 0 0 0.5rem $light-purple,
+    0 0 0 0.55rem $border-outer;
   border-radius: 0.1rem;
-  padding: 2rem 0.5rem 2rem 0.5rem;
+  padding: 2rem 0.5rem 2rem 4rem;
 }

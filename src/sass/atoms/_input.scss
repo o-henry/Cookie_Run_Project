@@ -2,8 +2,9 @@
 
 .Input {
   &.resv {
-    width: 20rem;
-    padding: 0.8rem;
+    position: relative;
+    width: 15rem;
+    padding: 0.8rem 0.8rem 0.8rem 1.4rem;
     border-radius: $form-border-radius;
     border: $form-border-status;
     font-size: $very-small;

@@ -23,8 +23,7 @@
 @mixin reservation-layout {
   .container {
     display: grid;
-    // grid-template-rows: repeat(3, 33.33%);
-    position: relative;
+    grid-template-rows: repeat(3, 33.33%);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'header header header'
@@ -38,8 +37,11 @@
       flex-direction: column;
       justify-content: flex-end;
       text-align: center;
-      padding: 10rem 0 0 0;
+      padding: 20rem 0 0 0;
       grid-area: main;
+    }
+    .aside {
+      grid-area: aside;
     }
     .footer {
       grid-area: footer;

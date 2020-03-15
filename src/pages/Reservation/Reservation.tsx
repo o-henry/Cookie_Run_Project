@@ -1,8 +1,10 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
 import { FormInput, Content } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
+import swal from 'sweetalert';
 
 function Reservation(): React.ReactElement {
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -10,9 +12,10 @@ function Reservation(): React.ReactElement {
     const [submit, { loading, error }] = useMutation(POST_PHONE_NUMBER, {
         onCompleted({ submit: { alreadyExists } }) {
             if (!alreadyExists) {
-                alert(`사전 예약이 완료 되었습니다.`)
+                swal(`사전 예약이 완료 되었습니다.`, { buttons: ['확인', false] })
             } else {
-                alert(`이미 사전예약이 완료된 번호입니다.`)
+                swal(`이미 사전예약이 
+                완료된 번호입니다.`, { buttons: ['확인', false] })
             }
         }
     });

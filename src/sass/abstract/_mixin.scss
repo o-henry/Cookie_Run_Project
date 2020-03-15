@@ -1,24 +1,36 @@
-@import 'utils';
+// Screen size variables
+$screen-xs-min: 425px; // Tiny phones
+$screen-sm-min: 575px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 767px; // Small tablets (portrait view)
+$screen-lg-min: 991px; // Tablets and small desktops
+$screen-xl-min: 1199px; // Large tablets and desktops
 
-// responsive
-@mixin mobile {
-  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+// Mixins
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
     @content;
   }
-}
-
-@mixin tablet {
-  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+} // Tiny devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
     @content;
   }
-}
-
-@mixin desktop {
-  @media (min-width: #{$breakpoint-desktop}) {
+} // Small devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
     @content;
   }
-}
-
+} // Medium devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+} // Large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+} // Extra large devices
 // grid
 @mixin reservation-layout {
   .container {

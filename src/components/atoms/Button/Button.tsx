@@ -13,7 +13,6 @@ interface Props {
 
 function Button({ onClick, style, children }: Props): React.ReactElement {
     return (
-        // eslint-disable-next-line react/no-unescaped-entities
         <button className={classNames('Button', style)} onClick={onClick}>{children}</button>
     )
 }

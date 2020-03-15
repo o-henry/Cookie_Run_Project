@@ -1,54 +1,56 @@
 img {
   max-width: 25rem;
   position: relative;
+  display: block;
+  margin: 0 auto;
   height: auto;
   z-index: 1;
 }
 
-@keyframes cherry {
-  0% {
-    top: 39rem;
-  }
-  95% {
-  }
-  to {
-    top: 42.5rem;
-  }
-}
+// @keyframes cherry {
+//   0% {
+//     top: 39rem;
+//   }
+//   95% {
+//   }
+//   to {
+//     top: 42.5rem;
+//   }
+// }
 
-@keyframes jungle {
-  0% {
-    top: 2rem;
-  }
-  95% {
-  }
-  to {
-    top: 6rem;
-  }
-}
+// @keyframes jungle {
+//   0% {
+//     top: 2rem;
+//   }
+//   95% {
+//   }
+//   to {
+//     top: 6rem;
+//   }
+// }
 
 #cherry {
   width: 14rem;
   left: 18.6rem;
-  top: 42.5rem;
+  top: 47.5rem;
   animation: cherry 3s ease-in Infinite Alternate;
 }
 
 #jungle {
   width: 18rem;
-  top: 4rem;
+  top: 9rem;
   right: 15rem;
   animation: jungle 2.5s ease-in Infinite Alternate;
 }
 
 #reward {
   width: 24rem;
-  top: -0.3rem;
-  right: -2rem;
+  top: 5.5rem;
+  right: 0rem;
 }
 
 #crystal {
   width: 5rem;
   top: 2rem;
-  right: 3rem;
+  left: 9rem;
 }

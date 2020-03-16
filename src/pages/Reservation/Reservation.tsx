@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
-import { FormInput, Content } from 'components';
+import { FormInput, Content, Loader } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 import { useTranslation } from 'react-i18next';
@@ -22,6 +22,7 @@ function Reservation(): React.ReactElement {
         }
     });
 
+    if (loading) return <Loader>{"쿠키가 구워지고 있어요..."}</Loader>
 
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')

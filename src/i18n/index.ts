@@ -17,7 +17,7 @@ export const initI18n = (): void => {
                         content: {
                             message1: "사전예약을 신청하신",
                             message2: "모든분들께 5만원 상당의",
-                            message3: "아이템을 드립니다."
+                            message3: "아이템을 드립니다!"
                         },
                         placeholder: {
                             input: "'-'없이 숫자만 입력해주세요"
@@ -32,7 +32,7 @@ export const initI18n = (): void => {
                         content: {
                             message1: "We will give ",
                             message2: "50,000 won worth of items to all ",
-                            message3: "those who have applied for pre - booking."
+                            message3: "those who have applied for pre - booking!"
                         },
                         placeholder: {
                             input: "Please enter a number without '-'"

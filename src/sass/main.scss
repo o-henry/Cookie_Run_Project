@@ -41,7 +41,7 @@ body,
   'atoms/content', 'atoms/modal', 'atoms/loader';
 
 /* molecules */
-@import 'molecules/FormInput';
+@import 'molecules/FormInput', 'molecules/langbtn';
 
 /* templates */
 @import 'templates/reservation';

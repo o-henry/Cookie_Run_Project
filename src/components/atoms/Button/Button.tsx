@@ -18,7 +18,7 @@ function Button({ onClick, style, children }: Props): React.ReactElement {
 }
 
 Button.defaultProps = {
-    style: ''
+    style: '',
 };
 
 

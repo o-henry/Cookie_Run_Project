@@ -32,4 +32,12 @@
     border: $form-border-status;
     background: $yellow;
   }
+  &.lang {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: $medium;
+    color: $white;
+    padding: 0 0.5rem 0 0.5rem;
+  }
 }

@@ -7,17 +7,20 @@ $bold: 600;
 $very-small: 0.5rem;
 $small: 0.9rem;
 $medium: 1.4rem;
-$big: 2.3rem;
+$big: 2.1rem;
 
 // color
 $black: black;
 $white: white;
 $purple: #3f1066;
+$gray: #9e9e9e;
+$yellow: #f9de4b;
 $light-purple: #5e1985;
 $border-line: #7825ac;
 $border-outer: #782fa4;
 $inner-line: #9933db;
-$yellow: #f9de4b;
+$box-gradient: 0 0 0 0.05rem $inner-line, 0 0 0 0.5rem $light-purple,
+  0 0 0 0.55rem $border-outer;
 
 // letter-spacing
 $short: 0.3rem;

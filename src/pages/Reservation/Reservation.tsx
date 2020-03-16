@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
-import { FormInput, Content, Image } from 'components';
+import { FormInput, Content } from 'components';
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 import { useTranslation } from 'react-i18next';
@@ -33,7 +33,6 @@ function Reservation(): React.ReactElement {
             swal(`입력 양식에 맞춰 
             다시 입력 해주세요!`, { buttons: ['확인', false] })
         }
-
     }
 
     return (

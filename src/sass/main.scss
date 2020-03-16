@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+* {
+  font-family: 'Jua', sans-serif;
+}
+
+html,
+body,
+#root,
+#root > div {
+  // overflow: hidden;
+  font-family: 'Jua', sans-serif;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    #8140b4,
+    #5e2a8e,
+    #3f1066,
+    #310756,
+    #300756
+  );
+}
+
 /* abstract */
 @import 'abstract/reset', 'abstract/utils', 'abstract/mixin';
 

@@ -1,62 +1,21 @@
 // Screen size variables
 $screen-xs-min: 425px; // Tiny phones
-$screen-sm-min: 575px; // Small tablets and large smartphones (landscape view)
 $screen-md-min: 767px; // Small tablets (portrait view)
-$screen-lg-min: 991px; // Tablets and small desktops
 $screen-xl-min: 1199px; // Large tablets and desktops
 
 // Mixins
-@mixin xs {
-  @media (min-width: #{$screen-xs-min}) {
-    @content;
-  }
-} // Tiny devices
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-} // Small devices
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-} // Medium devices
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-} // Large devices
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-} // Extra large devices
-// grid
-@mixin reservation-layout {
-  .container {
-    display: grid;
-    grid-template-rows: repeat(3, 33.33%);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      'header header header'
-      '. main .'
-      'footer footer footer';
-    .header {
-      grid-area: header;
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media (min-width: #{$screen-xs-min}) {
+      @content;
     }
-    .main {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      text-align: center;
-      padding: 30rem 0 0 0;
-      grid-area: main;
+  } @else if $point == md {
+    @media (min-width: #{$screen-md-min}) {
+      @content;
     }
-    .aside {
-      grid-area: aside;
-    }
-    .footer {
-      grid-area: footer;
+  } @else if $point == xl {
+    @media (min-width: #{$screen-xl-min}) {
+      @content;
     }
   }
 }

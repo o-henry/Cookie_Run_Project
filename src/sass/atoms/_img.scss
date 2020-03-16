@@ -7,40 +7,82 @@ img {
   z-index: 1;
 }
 
-// @keyframes cherry {
-//   0% {
-//     top: 39rem;
-//   }
-//   95% {
-//   }
-//   to {
-//     top: 42.5rem;
-//   }
-// }
-
-// @keyframes jungle {
-//   0% {
-//     top: 2rem;
-//   }
-//   95% {
-//   }
-//   to {
-//     top: 6rem;
-//   }
-// }
-
 #cherry {
-  width: 14rem;
-  left: 18.6rem;
-  top: 47.5rem;
   animation: cherry 3s ease-in Infinite Alternate;
+  @include breakpoint(xs) {
+    display: none;
+  }
+  @include breakpoint(md) {
+    display: block;
+    width: 14rem;
+    left: 18.6rem;
+    top: 45.5rem;
+    @keyframes cherry {
+      0% {
+        top: 47.7rem;
+      }
+      95% {
+      }
+      to {
+        top: 39.5rem;
+      }
+    }
+  }
+  @include breakpoint(xl) {
+    display: block;
+    width: 14rem;
+    left: 18.6rem;
+    top: 47.7rem;
+    @keyframes cherry {
+      0% {
+        top: 47.7rem;
+      }
+      95% {
+      }
+      to {
+        top: 39.5rem;
+      }
+    }
+  }
 }
 
 #jungle {
-  width: 18rem;
-  top: 9rem;
-  right: 15rem;
-  animation: jungle 2.5s ease-in Infinite Alternate;
+  animation: jungle 3s ease-in Infinite Alternate;
+  @include breakpoint(xs) {
+    display: none;
+  }
+  @include breakpoint(md) {
+    display: block;
+    width: 18rem;
+    top: 10rem;
+    right: 15rem;
+    @keyframes jungle {
+      0% {
+        top: 8rem;
+      }
+      95% {
+      }
+      to {
+        top: 13rem;
+      }
+    }
+  }
+  @include breakpoint(xl) {
+    display: block;
+    width: 18rem;
+    top: 10rem;
+    right: 15rem;
+    @keyframes jungle {
+      0% {
+        top: 10em;
+      }
+      95% {
+      }
+      to {
+        top: 13rem;
+      }
+    }
+  }
 }
 
 #reward {
@@ -51,6 +93,6 @@ img {
 
 #crystal {
   width: 5rem;
-  top: 2rem;
+  top: 1.8rem;
   left: 9rem;
 }

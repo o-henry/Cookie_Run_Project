@@ -1,26 +1,37 @@
 @import '../abstract/mixin';
-@import '../abstract/utils';
 
-* {
-  font-family: 'Jua', sans-serif;
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 33.33%);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'header header header'
+    '. main .'
+    'footer footer footer';
+  .header {
+    grid-area: header;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    @include breakpoint(xs) {
+      padding: 29rem 0 0 0;
+    }
+    @include breakpoint(md) {
+      padding: 29rem 0 0 0;
+    }
+    @include breakpoint(xl) {
+      padding: 30rem 0 0 0;
+    }
+
+    grid-area: main;
+  }
+  .aside {
+    grid-area: aside;
+  }
+  .footer {
+    grid-area: footer;
+  }
 }
-
-html,
-body,
-#root,
-#root > div {
-  // overflow: hidden;
-  font-family: 'Jua', sans-serif;
-  height: 100%;
-  background: radial-gradient(
-    circle,
-    #8140b4,
-    #5e2a8e,
-    #3f1066,
-    #310756,
-    #300756
-  );
-}
-
-// mixin reservation grid
-@include reservation-layout;

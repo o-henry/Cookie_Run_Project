@@ -95,4 +95,11 @@ img {
   width: 5rem;
   top: 1.8rem;
   left: 9rem;
+  cursor: pointer;
+  transition: transform 0.6s;
+  &:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+  }
 }

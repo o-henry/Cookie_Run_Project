@@ -23,7 +23,7 @@
       padding: 29rem 0 0 0;
     }
     @include breakpoint(xl) {
-      padding: 30rem 0 0 0;
+      padding: 30rem 12rem 0 12rem;
     }
 
     grid-area: main;

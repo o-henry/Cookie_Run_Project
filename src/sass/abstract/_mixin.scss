@@ -1,10 +1,16 @@
 // Screen size variables
+$screen-ss-min: 320px;
 $screen-xs-min: 425px; // Tiny phones
 $screen-md-min: 767px; // Small tablets (portrait view)
 $screen-xl-min: 1199px; // Large tablets and desktops
 
 // Mixins
 @mixin breakpoint($point) {
+  @if $point == ss {
+    @media (min-width: #{$screen-ss-min}) {
+      @content;
+    }
+  }
   @if $point == xs {
     @media (min-width: #{$screen-xs-min}) {
       @content;

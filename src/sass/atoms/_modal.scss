@@ -1,6 +1,40 @@
+@include breakpoint(ss) {
+  .swal-text {
+    font-family: 'BMJUA';
+    padding: 0.5rem 0 0 0;
+    text-align: center;
+    font-size: $medium;
+    color: $white;
+  }
+  .swal-button {
+    width: 6rem;
+    border-radius: 3rem;
+    color: $black;
+    background: $yellow;
+    font-size: 1.1rem;
+  }
+  .swal-modal {
+    background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
+    border: 3px solid $white;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border: none;
+  }
+  .swal-overlay {
+    background-color: rgba(19, 9, 29, 0.9);
+  }
+  .swal-footer {
+    position: relative;
+    right: 0.7rem;
+    padding: 0 7rem 0 7rem;
+    border-radius: 5rem;
+  }
+}
+
 @include breakpoint(xs) {
   .swal-text {
-    font-family: 'Jua', sans-serif;
+    font-family: 'BMJUA';
     padding: 0.5rem 0 0 0;
     text-align: center;
     font-size: $medium;
@@ -34,7 +68,7 @@
 
 @include breakpoint(md) {
   .swal-text {
-    font-family: 'Jua', sans-serif;
+    font-family: 'BMJUA';
     padding: 0.5rem 0 0 0;
     text-align: center;
     font-size: $medium;
@@ -68,7 +102,7 @@
 
 @include breakpoint(xl) {
   .swal-text {
-    font-family: 'Jua', sans-serif;
+    font-family: 'BMJUA';
     padding: 0.5rem 0 0 0;
     text-align: center;
     font-size: $medium;

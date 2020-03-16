@@ -1,6 +1,15 @@
 .Input {
   &.resv {
+    @include breakpoint(ss) {
+      width: 10rem;
+      right: 2.5rem;
+    }
     @include breakpoint(xs) {
+      width: 7rem;
+      right: 0.2rem;
+    }
+    @include breakpoint(xs) {
+      width: 10rem;
     }
     @include breakpoint(md) {
       width: 13rem;

@@ -1,11 +1,22 @@
 .forminput {
+  @include breakpoint(ss) {
+    padding: 1rem 0.5rem 1rem 4rem;
+    width: 13rem;
+    left: 3rem;
+  }
   @include breakpoint(xs) {
-    width: 22rem;
+    padding: 2rem 0.5rem 2rem 4rem;
+    width: 18rem;
+    left: 1rem;
   }
   @include breakpoint(md) {
+    padding: 2rem 0.5rem 2rem 4rem;
     width: 24.5rem;
+    left: 0.5rem;
   }
-
+  @include breakpoint(xl) {
+    padding: 2rem 0.5rem 2rem 4rem;
+  }
   box-shadow: $box-gradient;
   display: flex;
   justify-content: flex-start;

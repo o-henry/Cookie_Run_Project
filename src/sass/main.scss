@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  font-family: 'Jua', sans-serif;
+  font-family: 'BMJUA';
 }
 
 html,
@@ -9,13 +17,14 @@ body,
 #root,
 #root > div {
   // overflow: hidden;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BMJUA';
   height: 100%;
   background: radial-gradient(
     circle,
     #8140b4,
     #743ba7,
     #5e2a8e,
+    #53157c,
     #3f1066,
     #310756
   );

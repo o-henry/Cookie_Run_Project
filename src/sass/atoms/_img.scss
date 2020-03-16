@@ -9,6 +9,9 @@ img {
 
 #cherry {
   animation: cherry 3s ease-in Infinite Alternate;
+  @include breakpoint(ss) {
+    display: none;
+  }
   @include breakpoint(xs) {
     display: none;
   }
@@ -48,6 +51,9 @@ img {
 
 #jungle {
   animation: jungle 3s ease-in Infinite Alternate;
+  @include breakpoint(ss) {
+    display: none;
+  }
   @include breakpoint(xs) {
     display: none;
   }

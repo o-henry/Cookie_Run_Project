@@ -1,0 +1,46 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  @include breakpoint(ss) {
+    font-size: 1rem;
+  }
+  @include breakpoint(xs) {
+    font-size: 2rem;
+  }
+  @include breakpoint(md) {
+    font-size: 4rem;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 4rem;
+  }
+  color: white;
+  font-weight: $bold;
+  text-align: center;
+  letter-spacing: 2rem;
+  span {
+    display: inline-block;
+    margin: 0 -0.05em;
+  }
+}
+.load {
+  span {
+    animation: load 0.7s infinite;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i + 1}) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+}
+@keyframes load {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}

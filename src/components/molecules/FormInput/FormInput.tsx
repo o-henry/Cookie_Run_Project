@@ -8,7 +8,7 @@ interface Props {
     style?: string;
     children: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onClick: () => void;
+    onClick: (e: string) => void;
 }
 
 function FormInput({ value, placeholder, onChange, onClick, style, children }: Props): React.ReactElement {

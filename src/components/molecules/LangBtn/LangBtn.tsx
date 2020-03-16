@@ -1,19 +1,23 @@
 import React from 'react'
 import { Button } from 'components'
+import i18n from 'i18next';
 import 'sass/main.scss'
 
 interface Props {
-    onClick: () => void;
     style?: string;
 }
 
-function LangBtn({ onClick, style }: Props): React.ReactElement {
+function LangBtn({ style }: Props): React.ReactElement {
+    const changeLanguage = (lng: string): void => {
+        i18n.changeLanguage(lng);
+    };
+
     return (
         <div className="langbtn">
-            <Button style={style} onClick={onClick}>Ko</Button>
+            <Button style={style} onClick={() => changeLanguage('ko')}>KO</Button>
             <div id="divide">⎜</div>
-            <Button style={style} onClick={onClick}>En</Button>
-        </div>
+            <Button style={style} onClick={() => changeLanguage('en')}>EN</Button>
+        </div >
     )
 }
 

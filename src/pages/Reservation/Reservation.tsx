@@ -21,7 +21,7 @@ function Reservation(): React.ReactElement {
         }
     });
 
-    if (loading) return <Loader>{"쿠키가 구워지고 있어요..."}</Loader>
+    if (loading) return <Loader />
 
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
@@ -35,11 +35,12 @@ function Reservation(): React.ReactElement {
         }
     }
 
+
     return (
         <ResvTemplate
             langbtn={
                 <LangBtn
-                    style='lang' onClick={handleClick}
+                    style='lang'
                 />
             }
             formInput={
@@ -54,9 +55,9 @@ function Reservation(): React.ReactElement {
             }
             content={
                 [
-                    <Content key={1}>{t('content.message1')}</Content>,
-                    <Content key={2} style={'event'}>{t('content.message2')}</Content>,
-                    <Content key={3}>{t('content.message3')}</Content>
+                    <Content key={1} style='lang'>{t('content.message1')}</Content>,
+                    <Content key={2} style='event'>{t('content.message2')}</Content>,
+                    <Content key={3} style='lang'>{t('content.message3')}</Content>
                 ]}
         />
     )

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 interface Props {
     // onClick setState handler
-    onClick?: () => void;
+    onClick?: (e: any) => void;
     // style
     style?: string;
     // 내용

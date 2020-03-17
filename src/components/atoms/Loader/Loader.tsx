@@ -4,7 +4,7 @@ import 'sass/main.scss';
 
 function Loader(): React.ReactElement {
     return (
-        <div className="loading load">
+        <div className="loader load">
             <span>쿠</span>
             <span>키</span>
             <span>가</span>

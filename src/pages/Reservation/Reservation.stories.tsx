@@ -6,4 +6,4 @@ export default {
     title: 'Reservation'
 }
 
-export const reservation = () => <Reservation />
+export const reservation = (): React.ReactElement<void> => <Reservation />

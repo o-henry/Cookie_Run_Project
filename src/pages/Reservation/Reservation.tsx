@@ -48,16 +48,16 @@ function Reservation(): React.ReactElement {
                     style="resv"
                     placeholder={t('placeholder.input')}
                     value={phoneNumber}
-                    onChange={e => setPhoneNumber(e.target.value)
+                    onChange={(e): void => setPhoneNumber(e.target.value)
                     }
                     onClick={handleClick}
                 >{t('button.content')}</FormInput >
             }
             content={
                 [
-                    <Content key={1} style='lang'>{t('content.message1')}</Content>,
-                    <Content key={2} style='event'>{t('content.message2')}</Content>,
-                    <Content key={3} style='lang'>{t('content.message3')}</Content>
+                    <Content key={1} style='lang'>{t('content.msg1')}</Content>,
+                    <Content key={2} style='event'>{t('content.msg2')}</Content>,
+                    <Content key={3} style='lang'>{t('content.msg3')}</Content>
                 ]}
         />
     )

@@ -1,8 +1,8 @@
 {
   "content": {
-    "event-message-line1": "We will give ",
-    "event-message-line2": "50,000 won worth of items to all ",
-    "event-message-line3": "those who have applied for pre-booking!"
+    "msg1": "We will give ",
+    "msg2": "50,000 won worth of items to all ",
+    "msg3": "those who have applied for pre-booking!"
   },
   "placeholder": {
     "input": "Please enter a number without '-'"

@@ -3,9 +3,13 @@ import { Button, Input } from 'components'
 import 'sass/main.scss'
 
 interface Props {
+    /** 입력 값 */
     value: string;
+    /** Placeholder 값 */
     placeholder?: string;
+    /** 클래스이름에 따른 style */
     style?: string;
+    /** 버튼 이름 */
     children: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onClick: (e: string) => void;

@@ -1,5 +1,4 @@
 export { default as Input } from './atoms/Input/Input'
-export { default as Image } from './atoms/Image/Image'
 export { default as Loader } from './atoms/Loader/Loader'
 export { default as Button } from './atoms/Button/Button'
 export { default as Content } from './atoms/Content/Content'

@@ -12,6 +12,7 @@
     grid-area: header;
   }
   .main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -28,8 +29,6 @@
     @include breakpoint(xl) {
       padding: 27rem 12rem 0 12rem;
     }
-
-    grid-area: main;
   }
   .aside {
     grid-area: aside;

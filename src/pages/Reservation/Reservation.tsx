@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ResvTemplate from './templates/ResvTemplate';
 import { FormInput, Content, Loader, LangBtn } from 'components';
+import { useNumber } from 'hooks'
 import { useMutation } from '@apollo/react-hooks';
 import { POST_PHONE_NUMBER } from 'graphql/mutation';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +9,7 @@ import swal from 'sweetalert';
 
 function Reservation(): React.ReactElement {
     const { t } = useTranslation();
-    const [phoneNumber, setPhoneNumber] = useState('');
+    const [phoneNumber, setPhoneNumber] = useNumber();
     const [projectId, setProjectId] = useState('');
     const [submit, { loading }] = useMutation(POST_PHONE_NUMBER, {
         onCompleted({ submit: { alreadyExists } }) {
@@ -35,7 +36,6 @@ function Reservation(): React.ReactElement {
         }
     }
 
-
     return (
         <ResvTemplate
             langbtn={
@@ -48,8 +48,7 @@ function Reservation(): React.ReactElement {
                     style="resv"
                     placeholder={t('placeholder.input')}
                     value={phoneNumber}
-                    onChange={(e): void => setPhoneNumber(e.target.value)
-                    }
+                    onChange={setPhoneNumber}
                     onClick={handleClick}
                 >{t('button.content')}</FormInput >
             }

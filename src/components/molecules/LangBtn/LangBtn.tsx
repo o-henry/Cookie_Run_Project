@@ -16,7 +16,7 @@ function LangBtn({ style }: Props): React.ReactElement {
     return (
         <div className="langbtn">
             <Button style={style} onClick={(): void => changeLanguage('ko')}>KO</Button>
-            <div id="divide">⎜</div>
+            <div id="divide"> ⎜ </div>
             <Button style={style} onClick={(): void => changeLanguage('en')}>EN</Button>
         </div >
     )

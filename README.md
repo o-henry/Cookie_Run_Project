@@ -99,7 +99,7 @@ Reservation (Business Logic /  상태 관리)
 
 ### 설치 및 실행
 
-> npm i 또는 yarn add
+> npm i
 > npm start
 
 ### Link

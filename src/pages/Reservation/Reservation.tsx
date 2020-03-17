@@ -24,9 +24,9 @@ function Reservation(): React.ReactElement {
 
     if (loading) return <Loader />
 
+    // check number 
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
-        // check number
         const checkNumber = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
         if (checkNumber.test(phoneNumber)) {
             submit({ variables: { projectId, phoneNumber } });
@@ -36,7 +36,7 @@ function Reservation(): React.ReactElement {
         }
     }
 
-
+    // 메시지 배열
     const contents = [
         { id: 1, style: 'lang', desc: t('content.msg1') },
         { id: 2, style: 'event', desc: t('content.msg2') },
@@ -47,12 +47,12 @@ function Reservation(): React.ReactElement {
         <ResvTemplate
             langbtn={
                 <LangBtn
-                    style='lang'
+                    style={'lang'}
                 />
             }
             formInput={
                 <FormInput
-                    style="resv"
+                    style={"resv"}
                     placeholder={t('placeholder.input')}
                     value={phoneNumber}
                     onChange={setPhoneNumber}

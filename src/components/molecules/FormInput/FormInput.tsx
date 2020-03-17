@@ -14,7 +14,7 @@ interface Props {
     /** onChange setState handler */
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     /** onClick setState handler */
-    onClick: (e: string) => void;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 function FormInput({ value, placeholder, onChange, onClick, style, children }: Props): React.ReactElement {

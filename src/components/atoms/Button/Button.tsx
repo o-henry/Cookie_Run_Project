@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 interface Props {
     // onClick setState handler
-    onClick?: (e: any) => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     // style
     style?: string;
     // 내용

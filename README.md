@@ -101,3 +101,7 @@ Reservation (Business Logic /  상태 관리)
 
 > npm i 또는 yarn add
 > npm start
+
+### Link
+
+[jira](https://o-henry.atlassian.net/l/c/xip1oibB)

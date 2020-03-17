@@ -36,6 +36,7 @@ function Reservation(): React.ReactElement {
         }
     }
 
+
     const contents = [
         { id: 1, style: 'lang', desc: t('content.msg1') },
         { id: 2, style: 'event', desc: t('content.msg2') },

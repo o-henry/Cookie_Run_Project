@@ -19,7 +19,6 @@ function Loader(): React.ReactElement {
             <span>요</span>
             <span>.</span>
             <span>.</span>
-            <span>.</span>
         </div>
     )
 }

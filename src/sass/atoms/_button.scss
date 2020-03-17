@@ -1,14 +1,14 @@
 .Button {
   &.resv {
     @include breakpoint(ss) {
-      font-size: $very-small-b;
-      width: 6rem;
-      right: 1.7rem;
+      font-size: 0.2rem;
+      width: 4.9rem;
+      right: 1.1rem;
     }
     @include breakpoint(xs) {
-      font-size: $small;
+      font-size: $very-small;
       right: 3rem;
-      width: 7rem;
+      width: 5rem;
     }
     @include breakpoint(md) {
       font-size: $small;

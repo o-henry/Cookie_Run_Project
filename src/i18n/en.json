@@ -2,12 +2,12 @@
   "content": {
     "msg1": "We will give ",
     "msg2": "50,000 won worth of items to all ",
-    "msg3": "those who have applied for pre-booking!"
+    "msg3": "those who applied for advance reservation!"
   },
   "placeholder": {
     "input": "Please enter a number without '-'"
   },
   "button": {
-    "content": "Advance reservation >"
+    "content": "Reservation >"
   }
 }

@@ -1,9 +1,11 @@
 .Content {
   position: relative;
   text-align: center;
-  font-size: $big;
+  font-size: 26.5px;
   color: $white;
   bottom: 23rem;
+  line-height: 27px;
+  z-index: 1;
   &.event {
     color: $yellow;
   }

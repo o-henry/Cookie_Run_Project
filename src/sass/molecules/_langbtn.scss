@@ -4,6 +4,18 @@
   align-items: center;
   position: relative;
   top: 48rem;
+  @include breakpoint(ss) {
+    top: -3rem;
+  }
+  @include breakpoint(xs) {
+    top: -1rem;
+  }
+  @include breakpoint(md) {
+    top: 48rem;
+  }
+  @include breakpoint(xl) {
+    top: 48rem;
+  }
   #divide {
     color: white;
   }

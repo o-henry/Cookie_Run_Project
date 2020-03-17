@@ -14,17 +14,17 @@
   .main {
     grid-area: main;
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
+    flex-direction: column;
     text-align: center;
     @include breakpoint(ss) {
-      padding: 25.5rem 0 0 0;
+      padding: $grid-padding;
     }
     @include breakpoint(xs) {
       padding: 24.5rem 0 0 0;
     }
     @include breakpoint(md) {
-      padding: 25.5rem 0 0 0;
+      padding: $grid-padding;
     }
     @include breakpoint(xl) {
       padding: 27rem 12rem 0 12rem;

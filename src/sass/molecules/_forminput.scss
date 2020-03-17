@@ -5,23 +5,24 @@
     left: 3rem;
   }
   @include breakpoint(xs) {
-    padding: 2rem 0.5rem 2rem 4rem;
+    padding: $form-input-padding;
     width: 18rem;
     left: 1rem;
   }
   @include breakpoint(md) {
-    padding: 2rem 0.5rem 2rem 4rem;
+    padding: $form-input-padding;
     width: 24.5rem;
     left: 0.5rem;
   }
   @include breakpoint(xl) {
-    padding: 2rem 0.5rem 2rem 4rem;
+    padding: $form-input-padding;
   }
-  box-shadow: $box-gradient;
+
   display: flex;
   justify-content: flex-start;
   position: relative;
-  padding: 2rem 0.5rem 2rem 4rem;
+  box-shadow: $box-gradient;
+  padding: $form-input-padding;
   background: linear-gradient(to right, $light-purple, $medium-purple, $purple);
   border-radius: 0.1rem;
 }

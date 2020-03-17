@@ -11,7 +11,9 @@ interface Props {
     style?: string;
     /** 버튼 이름 */
     children: string;
+    /** onChange setState handler */
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    /** onClick setState handler */
     onClick: (e: string) => void;
 }
 

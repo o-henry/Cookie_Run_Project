@@ -36,6 +36,12 @@ function Reservation(): React.ReactElement {
         }
     }
 
+    const contents = [
+        { id: 1, style: 'lang', desc: t('content.msg1') },
+        { id: 2, style: 'event', desc: t('content.msg2') },
+        { id: 3, style: 'lang', desc: t('content.msg3') }
+    ]
+
     return (
         <ResvTemplate
             langbtn={
@@ -53,11 +59,12 @@ function Reservation(): React.ReactElement {
                 >{t('button.content')}</FormInput >
             }
             content={
-                [
-                    <Content key={1} style='lang'>{t('content.msg1')}</Content>,
-                    <Content key={2} style='event'>{t('content.msg2')}</Content>,
-                    <Content key={3} style='lang'>{t('content.msg3')}</Content>
-                ]}
+                contents.map(content => {
+                    return (
+                        <Content key={content.id} style={content.style}>{content.desc}</Content>
+                    )
+                })
+            }
         />
     )
 };

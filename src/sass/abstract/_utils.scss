@@ -5,7 +5,9 @@ $bold: 600;
 
 // font-size
 $very-small: 0.5rem;
+$very-small-b: 0.7rem;
 $small: 0.9rem;
+$small-b: 1.2rem;
 $medium: 1.4rem;
 $medium-b: 1.8rem;
 $big: 2rem;
@@ -42,3 +44,7 @@ $content-font-weight: $bold;
 // formInput
 $form-border-radius: 3rem;
 $form-border-status: none;
+$form-input-padding: 2rem 0.5rem 2rem 4rem;
+
+//grid
+$grid-padding: 25.5rem 0 0 0;

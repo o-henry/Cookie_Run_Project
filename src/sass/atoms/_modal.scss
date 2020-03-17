@@ -1,138 +1,32 @@
-@include breakpoint(ss) {
-  .swal-text {
-    font-family: 'BMJUA';
-    padding: 0.5rem 0 0 0;
-    text-align: center;
-    font-size: $medium;
-    color: $white;
-  }
-  .swal-button {
-    margin: 1rem 0 0 0;
-    width: 6rem;
-    border-radius: 3rem;
-    font-size: small;
-    color: $black;
-    background: $yellow;
-  }
-  .swal-modal {
-    background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
-    border: 3px solid $white;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    border: none;
-  }
-  .swal-overlay {
-    background-color: rgba(19, 9, 29, 0.9);
-  }
-  .swal-footer {
-    position: relative;
-    right: 0.7rem;
-    padding: 0 7rem 0 7rem;
-    border-radius: 5rem;
-  }
+.swal-modal {
+  background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
+  border: 3px solid $white;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: none;
 }
-
-@include breakpoint(xs) {
-  .swal-text {
-    font-family: 'BMJUA';
-    padding: 0.5rem 0 0 0;
-    text-align: center;
-    font-size: $medium;
-    color: $white;
-  }
-  .swal-button {
-    margin: 1rem 0 0 0;
-    width: 6rem;
-    border-radius: 3rem;
-    font-size: $small;
-    color: $black;
-    background: $yellow;
-  }
-  .swal-modal {
-    background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
-    border: 3px solid $white;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    border: none;
-  }
-  .swal-overlay {
-    background-color: rgba(19, 9, 29, 0.9);
-  }
-  .swal-footer {
-    position: relative;
-    right: 0.7rem;
-    padding: 0 7rem 0 7rem;
-    border-radius: 5rem;
-  }
+.swal-text {
+  font-family: 'BMJUA';
+  padding: 0.5rem 0 0 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: $white;
 }
-
-@include breakpoint(md) {
-  .swal-text {
-    font-family: 'BMJUA';
-    padding: 0.5rem 0 0 0;
-    text-align: center;
-    font-size: $medium;
-    color: $white;
-  }
-  .swal-button {
-    margin: 1rem 0 0 0;
-    width: 6rem;
-    border-radius: 3rem;
-    font-size: $small;
-    color: $black;
-    background: $yellow;
-  }
-  .swal-modal {
-    background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
-    border: 3px solid $white;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    border: none;
-  }
-  .swal-overlay {
-    background-color: rgba(19, 9, 29, 0.9);
-  }
-  .swal-footer {
-    position: relative;
-    right: 0.7rem;
-    padding: 0 7rem 0 7rem;
-    border-radius: 5rem;
-  }
+.swal-button {
+  margin: 1rem 0 0 0;
+  width: 6rem;
+  border-radius: 3rem;
+  font-size: $small;
+  color: $black;
+  background: $yellow;
 }
-
-@include breakpoint(xl) {
-  .swal-text {
-    padding: 0.5rem 0 0 0;
-    text-align: center;
-    font-size: $medium;
-    color: $white;
-  }
-  .swal-button {
-    margin: 1rem 0 0 0;
-    width: 6rem;
-    border-radius: 3rem;
-    font-size: $small;
-    color: $black;
-    background: $yellow;
-  }
-  .swal-modal {
-    background: radial-gradient(circle, #a24a1b, #a8561f, #b97230, #d49d51);
-    border: 3px solid $white;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    border: none;
-  }
-  .swal-overlay {
-    background-color: rgba(19, 9, 29, 0.9);
-  }
-  .swal-footer {
-    position: relative;
-    right: 0.7rem;
-    padding: 0 7rem 0 7rem;
-    border-radius: 5rem;
-  }
+.swal-overlay {
+  background-color: rgba(19, 9, 29, 0.9);
+}
+.swal-footer {
+  position: relative;
+  right: 0.7rem;
+  padding: 0 7rem 0 7rem;
+  border-radius: 5rem;
 }

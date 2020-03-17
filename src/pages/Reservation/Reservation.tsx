@@ -11,6 +11,8 @@ function Reservation(): React.ReactElement {
     const { t } = useTranslation();
     const [phoneNumber, setPhoneNumber] = useNumber();
     const [projectId, setProjectId] = useState('');
+
+    // 예약하기 버튼을 눌러 서버로 요청
     const [submit, { loading }] = useMutation(POST_PHONE_NUMBER, {
         onCompleted({ submit: { alreadyExists } }) {
             if (!alreadyExists) {
@@ -22,9 +24,10 @@ function Reservation(): React.ReactElement {
         }
     });
 
+    // 로딩 인디케이터
     if (loading) return <Loader />
 
-    // check number 
+    // 입력 폼 유효성 체크
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
         const checkNumber = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
@@ -36,7 +39,7 @@ function Reservation(): React.ReactElement {
         }
     }
 
-    // 메시지 배열
+    // 언어처리 문자 배열
     const contents = [
         { id: 1, style: 'lang', desc: t('content.msg1') },
         { id: 2, style: 'event', desc: t('content.msg2') },

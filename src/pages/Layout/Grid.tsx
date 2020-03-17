@@ -2,7 +2,7 @@ import React from 'react';
 import 'sass/main.scss'
 
 interface Props {
-    children: any;
+    children: React.HTMLAttributes<HTMLDivElement>;
 }
 
 const Grid = ({ children }: Props): React.ReactElement => {

@@ -27,7 +27,7 @@ function Reservation(): React.ReactElement {
     const handleClick = (): void => {
         setProjectId('2020-lch-c47348')
         // check number
-        const checkNumber = /^\d{3}\d{4}\d{4}$/;
+        const checkNumber = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
         if (checkNumber.test(phoneNumber)) {
             submit({ variables: { projectId, phoneNumber } });
         } else {

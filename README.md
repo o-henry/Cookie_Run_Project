@@ -1,6 +1,6 @@
 ### 쿠키런
 [![cookie](https://j.gifs.com/L7mlMv.gif)](https://www.youtube.com/embed/vV-hFzdlYyU)
-
+(클릭 하면 youtube video로 이동합니다.)
 
 #### 목표
 

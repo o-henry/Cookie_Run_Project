@@ -1,4 +1,6 @@
 ### 쿠키런
+[![cookie](https://j.gifs.com/L7mlMv.gif)](https://www.youtube.com/embed/vV-hFzdlYyU)
+
 
 #### 목표
 
